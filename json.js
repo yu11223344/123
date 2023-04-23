@@ -198,7 +198,7 @@ var FindingObservation={
     ]}
     function postData(jsonString, type) {
         var xhttp = new XMLHttpRequest();
-        var fhirUrl="http://hapi.fhir.org/baseR4"
+        var fhirUrl="https://hapi.fhir.org/baseR4"
         var url = fhirUrl +"/"+type;
         xhttp.open("POST", url, false);
         xhttp.setRequestHeader("Content-type", 'application/json+fhir');
